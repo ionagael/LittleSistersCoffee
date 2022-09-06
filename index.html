@@ -9,15 +9,13 @@
        
         <!-- Site created by Phil Burkart on August 22, 2022 -->
        
-                <!--This CSS centers paragraphs if you assign the CENTER tag to said paragraph//-->
         
 <style>
 .center {
  text-align: center
 }
        
-    
-        ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,8 +23,6 @@
   background-color: #f1f1f1;
 }
 
-
-    
 li a {
   display: block;
   color: #000;
@@ -34,20 +30,15 @@ li a {
   text-decoration: none;
 }
 
-    
-li a:hover {
-    background-color: #555;
-    color: white;
-    }
-
-    
-    .active {
+li a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-
-    
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
     
 body {
     background-color: #ffffff;
