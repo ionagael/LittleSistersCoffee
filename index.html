@@ -9,25 +9,40 @@
        
         <!-- Site created by Phil Burkart on August 22, 2022 -->
        
+                /*This CSS centers paragraphs if you assign the CENTER tag to said paragraph*/
+        
 <style>
 .center {
  text-align: center
 }
 
-        <!--This CSS centers paragraphs if you assign the CENTER tag to said paragraph//-->
+
         
+           /*changes list to horizontal or something like that*/
         ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
 }
-                <!--Removes bullets from list//-->
-        
-        li a {
+
+             <!--Makes list into block format and allows you to decide what the width will be. not sure how different from above css//-->
+    
+li a {
   display: block;
-  width: 60px;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
-         <!--Makes list into block format and allows you to decide what the width will be//-->
+
+/* Change the link color on hover */
+    
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
       
     
             body {background-color: #ffffff;}
