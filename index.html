@@ -15,55 +15,35 @@
  text-align: center
 }
     
+body {margin: 0;}
 
-   /*this removes the bullets */
-ul {
+ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
+  overflow: hidden;
+  background-color: #333;
 }
 
-       /* makes the whole block clickable around the text */
-li a {
+ul.topnav li {float: left;}
+
+ul.topnav li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-           /* shows which link is active */
-    
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-           /* when hovering over, the link highlights */
-    
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-    
-        /* adds border to nav bar links */
-    
-    ul {
-  border: 1px solid #555;
-}
+ul.topnav li a.active {background-color: #04AA6D;}
 
-        /* centers nav bar items in respective boxes */
-    
-li {
-  text-align: center;
-  border-bottom: 1px solid #555;
-}
+ul.topnav li.right {float: right;}
 
-        /* centers items up and down in nav bar boxes */
-    
-li:last-child {
-  border-bottom: none;
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
     
 body {
@@ -75,15 +55,23 @@ body {
 </head>
 
     <body>
-        <h1>Little Sister's Coffee</h1>
-        <img src="logo735x735.png" width="250" height="250" alt="Logo">
 
-        <ul>
+        <ul class="topnav">
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/index.html">Home</a></li>          
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/Menu.html">Menu</a></li>
-            <li><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact Us</a></li>
+            <li class="right"><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
         </ul>
+
+       
+        <img src="logo735x735.png" width="250" height="250" alt="Logo">
+        
+<div style="padding:0 16px;">
+  <h2>Little Sister's Coffee</h2>
+  <p>Little Sister's Coffee is located right off the highway and offers the highest quality coffee, quickly!</p>
+
+</div>
+        
         
         <footer>
           <p class="center"><span style="color:#808080;">Little Sister LLC, dba Little Sister's Coffee, founded 2023</span></p>
