@@ -29,6 +29,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+    .bg {
+  /* The image used */
+  background-image: url("CoffeeBeans.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
     
     
     body {
@@ -44,6 +57,10 @@ ul.topnav {
   background-color: #333;
 }
 
+.active {
+  background-color: #04AA6D;
+}
+
 ul.topnav li {float: left;}
 
 ul.topnav li a {
@@ -52,6 +69,12 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -81,14 +104,18 @@ ul.topnav li.right {float: right;}
     <body>
 
         <ul class="topnav">
-            <li><a href="https://ionagael.github.io/LittleSistersCoffee/index.html">Home</a></li>          
+            <li><a class="active" href="https://ionagael.github.io/LittleSistersCoffee/index.html">Home</a></li>          
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/Menu.html">Menu</a></li>
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact Us</a></li>
+              
             <li class="right"><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
         </ul>
 
        
         <img src="logo735x735.png" width="250" height="250" alt="Logo">
+        
+        
+               <div class="bg"></div>
         
 <div style="padding:0 16px;">
     <h1 class="center"><span font-family="georgia">Little Sister's Coffee</span></h1>
