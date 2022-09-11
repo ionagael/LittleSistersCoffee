@@ -69,27 +69,43 @@ p {text-align: center;}
 table, th{
 
   color:white;
-  background-color:#C4A484; 
+  background-color:white; 
   font-family:georgia;
+    border-spacing: 10px;
+
 }
 
 td {
 
   background-color:white; 
   color: #333;
+       border-radius: 10px;
     padding: 10px;
+    height:50;
     
 
+}
+
+/* Center 1st column */
+table td:nth-child(1) {
+border-color: solid black;
+     background-color:#ffffff; 
+            border: 1px solid black;
 }
 
 /* Center 2nd column */
 table td:nth-child(2) {
     text-align: center;
+     background-color:#654321; 
+     color:white;
 }
 
 /* Center 3rd column */
 table td:nth-child(3) {
     text-align: center;
+     background-color:#C4A484; 
+
+
 }
 
 footer{
@@ -123,131 +139,165 @@ footer{
 
 <table style="border:1px solid white;margin-left:auto;margin-right:auto;">
   <tr>
-    <th>Item</th>
+    <th>Picture</th>
+       <th>Name</th>
     <th>$</th>
   </tr>
   
     <tr>
-<td height=50><img src="logos/Logo500x500.png" alt="Coffee" height=50 width=50 /></td>
+<td><img src="logos/Logo500x500.png" alt="Coffee" height=50 width=50 /></td>
+   <td>Coffee</td>
     <td>1.00 | 2.00</td>
   </tr>
   
       <tr>
-<td height=50><img src="logos/Logo500x500.png" alt="Decaf Coffee" height=50 width=50 /></td>
+<td><img src="logos/Logo500x500.png" alt="Decaf Coffee" height=50 width=50 /></td>
+   <td>Decaf Coffee</td>
     <td>1.00 | 2.00</td>
   </tr>
   
       <tr>
+<td><img src="logos/Logo500x500.png" alt="Iced Coffee" height=50 width=50 /></td>
     <td>Iced Coffee</td>
     <td>1.00 | 2.00</td>
   </tr>
   
+                                <tr>
+                                          <td><img src="logos/Logo500x500.png" alt="Macchiato" height=50 width=50 /></td>
+    <td>Macchiato</td>
+    <td>2.00 | 3.00 | 4.00</td>
+  </tr>
+  
+  
       <tr>
-    <td>Iced Caramel Coffee</td>
+<td><img src="logos/Logo500x500.png" alt="Iced Caramel Coffee" height=50 width=50 /></td>
+        <td>Iced Caramel Coffee</td>
     <td>1.00 | 2.00</td>
   </tr>
   
       <tr>
-    <td>Iced French Vanilla Coffee</td>
+<td><img src="logos/Logo500x500.png" alt="Iced French Vanilla Coffee" height=50 width=50 /></td>
+        <td>Iced French Vanilla Coffee</td>
     <td>1.00 | 2.00</td>
   </tr>
   
   <tr>
+  <td><img src="logos/Logo500x500.png" alt="Espresso" height=50 width=50 /></td>
     <td>Espresso</td>
     <td>1.00 | 2.00</td>
   </tr>
   
    <tr>
+     <td><img src="logos/Logo500x500.png" alt="Decaf Espresso" height=50 width=50 /></td>
     <td>Decaf Espresso</td>
     <td>1.00 | 2.00</td>
   </tr>
   
   <tr>
+       <td><img src="logos/Logo500x500.png" alt="Americano" height=50 width=50 /></td>
     <td>Americano</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
     <tr>
+           <td><img src="logos/Logo500x500.png" alt="Decaf Americano" height=50 width=50 /></td>
     <td>Decaf Americano</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
     <tr>
+               <td><img src="logos/Logo500x500.png" alt="Caramel Macchiato" height=50 width=50 /></td>
     <td>Caramel Macchiato</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
       <tr>
+                     <td><img src="logos/Logo500x500.png" alt="Iced Caramel Macchiato" height=50 width=50 /></td>
     <td>Iced Caramel Macchiato</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
         <tr>
+                       <td><img src="logos/Logo500x500.png" alt="Cappuccino" height=50 width=50 /></td>
     <td>Cappuccino</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
           <tr>
+                         <td><img src="logos/Logo500x500.png" alt="Caramel Cappuccino" height=50 width=50 /></td>
     <td>Caramel Cappuccino</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
             <tr>
+                           <td><img src="logos/Logo500x500.png" alt="French Vanilla Cappuccino" height=50 width=50 /></td>
     <td>French Vanilla Cappuccino</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
               <tr>
+                      <td><img src="logos/Logo500x500.png" alt="Mocha" height=50 width=50 /></td>
     <td>Mocha</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                 <tr>
+                        <td><img src="logos/Logo500x500.png" alt="Iced Mocha" height=50 width=50 /></td>
     <td>Iced Mocha</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                   <tr>
+                          <td><img src="logos/Logo500x500.png" alt="Iced Latte" height=50 width=50 /></td>
     <td>Iced Latte</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                     <tr>
+                            <td><img src="logos/Logo500x500.png" alt="Latte" height=50 width=50 /></td>
     <td>Latte</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                       <tr>
+                                                  <td><img src="logos/Logo500x500.png" alt="Caramel Latte" height=50 width=50 /></td>
     <td>Caramel Latte</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                       <tr>
+                                                  <td><img src="logos/Logo500x500.png" alt="Iced Caramel Latte" height=50 width=50 /></td>
     <td>Iced Caramel Latte</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                         <tr>
+                                                                          <td><img src="logos/Logo500x500.png" alt="French Vanilla Latte" height=50 width=50 /></td>
     <td>French Vanilla Latte</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                           <tr>
+                                                                            <td><img src="logos/Logo500x500.png" alt="Hot Chocolate" height=50 width=50 /></td>
     <td>Hot Chocolate</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
                             <tr>
+                             <td><img src="logos/Logo500x500.png" alt="Strawberry Smoothie" height=50 width=50 /></td>
     <td>Strawberry Smoothie</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
-                              <tr>
+                            <tr>
+                             <td><img src="logos/Logo500x500.png" alt="Vanilla Smoothie" height=50 width=50 /></td>
     <td>Vanilla Smoothie</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
   
+
                               <tr>
+                             <td><img src="logos/Logo500x500.png" alt="Chocolate Smoothie" height=50 width=50 /></td>
     <td>Chocolate Smoothie</td>
     <td>2.00 | 3.00 | 4.00</td>
   </tr>
