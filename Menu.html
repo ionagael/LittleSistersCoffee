@@ -59,13 +59,37 @@ p {text-align: center;}
   
   
   .container { 
-  height: 400px;
+  height: 100%;
   position: relative;
+    margin: 20px;
 }
 
 
-table, th, td {
-  border:1px solid black;
+
+table, th{
+
+  color:white;
+  background-color:#C4A484; 
+  font-family:georgia;
+}
+
+td {
+
+  background-color:white; 
+  color: #333;
+    padding: 10px;
+    
+
+}
+
+/* Center 2nd column */
+table td:nth-child(2) {
+    text-align: center;
+}
+
+/* Center 3rd column */
+table td:nth-child(3) {
+    text-align: center;
 }
 
 footer{
@@ -81,12 +105,7 @@ footer{
 }
   
 </style>
-  
-  <script>
-  function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-    </script>
+ 
   
 </head>
 <body>
@@ -99,38 +118,110 @@ footer{
         </ul>
 
   <div class="container">
-        <h3>Menu</h3>
+        <h2>Menu</h2>
         
 
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+<table style="border:1px solid white;margin-left:auto;margin-right:auto;">
   <tr>
     <th>Item</th>
     <th>Size</th>
-    <th>Prices</th>
+    <th>Price</th>
   </tr>
+  
   <tr>
     <td>Espresso</td>
-    <td>Single | Double</td>
-    <td>$1.00 | $2.00</td>
+    <td>Single / Double</td>
+    <td>$1.00 / $2.00</td>
   </tr>
+  
   <tr>
     <td>Americano</td>
-    <td>Small | Medium | Large</td>
-    <td>$2.00 | $3.00 | $4.00</td>
+    <td> S M L </td>
+    <td>$2.00 / $3.00 / $4.00</td>
   </tr>
+  
+    <tr>
+    <td>Caramel Macchiato</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+      <tr>
+    <td>Iced Caramel Macchiato</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+        <tr>
+    <td>Cappuccino</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+          <tr>
+    <td>Caramel Cappuccino</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+            <tr>
+    <td>French Vanilla Cappuccino</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+              <tr>
+    <td>Mocha</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+                <tr>
+    <td>Iced Mocha</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+                  <tr>
+    <td>Iced Latte</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+                    <tr>
+    <td>Latte</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+                      <tr>
+    <td>Caramel Latte</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
+                      <tr>
+    <td>Iced Caramel Latte</td>
+    <td> S M L </td>
+    <td>$2.50 / $3.50 / $4.50</td>
+  </tr>
+  
 </table>
   </div>
 </body>
 
   <footer class="site-footer">
+  
     <div style="padding: 5px;">
           <img src="logos/Logo500x500white.png" width="50" height="50" alt="Logo">
 
 </div>
+
   <div id="footer-content">
-  <p class="a">Little Sister LLC, dba Little Sister's Coffee, founded 2023</p>
+    <p class="a">Little Sister LLC, dba Little Sister's Coffee, founded 2023</p>
 <p class="a">109 E. Broadway, Medford WI 54451</p>
   </div>
+  
 </footer>
   
 </html>
