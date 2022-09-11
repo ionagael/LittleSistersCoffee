@@ -131,21 +131,7 @@ footer{
 }
   
 </style>
-<script>
-function openMenu(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+
   
 </head>
 <body>
@@ -160,9 +146,9 @@ function openMenu(evt, cityName) {
   <div class="container">
   
 <div class="tab">
-  <button class="tablinks" onclick="openMenu(event, 'Hot')">Hot Drinks</button>
-  <button class="tablinks" onclick="openMenu(event, 'Cold')">Cold Drinks</button>
-  <button class="tablinks" onclick="openMenu(event, 'Food')">Food</button>
+  <button class="tablinks" onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Hot.html'">Hot Drinks</button>
+  <button class="tablinks" onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold.html'">Cold Drinks</button>
+  <button class="tablinks" onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Food.html'">Food</button>
 </div>
 
 <div id="Hot" class="tabcontent">
