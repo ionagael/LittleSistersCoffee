@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  
+
+
+    body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+      margin: 0;
+}
+  
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a.active {background-color: #C4A484;}
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+
+  
+  h2 {text-align: center;}
+    h3 {text-align: center;}
+p {text-align: center;}
+  
+  p.a {
+    color: #FFFFFF;
+  }
+  
+  .button {
+  background-color: #333; 
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    
+
+}
+
+      .button:hover {
+  background-color: #FFFFFF; 
+  border: 2px solid #333;
+  color: #333;
+        }
+  
+  .container { 
+  height: 400px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  
+  
+
+  
+footer{
+    margin-top: auto;
+}
+  
+  .site-footer {
+  background: #333;
+}
+
+#footer-content {
+  background: #333;
+}
+  
+</style>
+  
+  <script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+    </script>
+  
+</head>
+<body>
+
+        <ul class="topnav">
+            <li><a href="https://ionagael.github.io/LittleSistersCoffee/index.html">Home</a></li>          
+            <li><a class="active" href="https://ionagael.github.io/LittleSistersCoffee/Menu.html">Menu</a></li>
+            <li><a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact Us</a></li>  
+            <li class="right"><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
+        </ul>
+
+
+
+</body>
+
+  <footer class="site-footer">
+    <div style="padding: 5px;">
+          <img src="logos/Logo500x500white.png" width="50" height="50" alt="Logo">
+
+</div>
+  <div id="footer-content">
+  <p class="a">Little Sister LLC, dba Little Sister's Coffee, founded 2023</p>
+<p class="a">109 E. Broadway, Medford WI 54451</p>
+  </div>
+</footer>
+  
+</html>
