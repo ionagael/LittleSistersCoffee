@@ -4,7 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   
+div.container5 {
 
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: 10px;
+
+      }
 
     body{
     min-height: 100vh;
@@ -49,15 +56,18 @@ ul.topnav li.right {float: right;}
   
   h2 {text-align: center;}
     h3 {text-align: center;}
-p {text-align: center;}
+
   
   p.a {
     color: #FFFFFF;
+    text-align: center;
   }
   
   
-
-
+  p.b {
+    color: #666;
+    text-align: center;
+  }
 
 
 
@@ -87,12 +97,26 @@ footer{
             <li class="right"><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
         </ul>
 
-  <div>
-    <p>Little Sister's Coffee</p>
-<p>109 E. Broadway, Medford WI 54451</p>
-    
-  </div>
 
+<img id="contact" src="map.jpg" alt="Map" style="width:100%">
+
+<p class="b">Little Sister's Coffee, 109 E. Broadway, Medford WI 54451.</p>
+
+
+<div class="container5">
+
+
+<form action="/action_page.php" target="_blank">
+
+<p><input type="text" placeholder="Email" required name="Email"></p>
+
+<p><input type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+
+<p><input type="text" placeholder="Message" required name="Message"></p>
+
+<p><button type="submit">SEND MESSAGE</button></p>
+</form>
+</div>
 
 </body>
 
