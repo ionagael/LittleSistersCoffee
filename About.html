@@ -4,8 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   
+div.container5 {
 
-/*  styling for the body*/
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: 10px;
+
+      }
 
     body{
     min-height: 100vh;
@@ -14,15 +20,11 @@
       margin: 0;
 }
   
-  /*  styling for the image in the footer*/
-  
   img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-  
-    /*  beginning css for the primary nav bar*/
   
 ul.topnav {
   list-style-type: none;
@@ -51,43 +53,24 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
-  /*  end css for the primary nav bar*/
-  
-  
   
   h2 {text-align: center;}
     h3 {text-align: center;}
-  
-  P.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-div.container5 {
-        width: 70%;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
-margin-bottom: 10px;
-
-      }
-
-
-
-table {
-    background: #C4A484;
-    border-spacing: 5px;
-    margin-bottom: 10px;
-    border: 1px solid white; 
-    margin-left:auto; 
-    margin-right:auto;
-}
   
   p.a {
     color: #FFFFFF;
     text-align: center;
   }
+  
+  
+  p.b {
+    color: #666;
+    text-align: center;
+  }
+
+
+
 
 footer{
     margin-top: auto;
@@ -103,63 +86,36 @@ footer{
   
 </style>
 
+  
 </head>
 <body>
 
         <ul class="topnav">
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/index.html">Home</a></li>          
             <li><a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Hot.html">Menu</a></li>
-            <li><a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact Us</a></li>  
-            <li class="right"><a class="active" href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
+            <li><a class="active" href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact Us</a></li>  
+            <li class="right"><a href="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a></li>
         </ul>
 
 
+<img id="contact" src="map.jpg" alt="Map" style="width:100%">
 
-<div class ="container5">
-<h2>About</h2>
-  <P class="blocktext">In 2012, my sister and I filmed a scene in a small movie. The director knew I liked coffee so he allowed me to film a scene where I ask my sister to help open a small coffee shop. Ten years later, that coffee shop is a reality, in the real world! Little Sister's Coffee is a tribute to that scene. </p>
-</div>
+<p class="b">Little Sister's Coffee, 109 E. Broadway, Medford WI 54451.</p>
 
 
-<div>
-<table>
+<div class="container5">
 
-  
-    <tr>
-   <td>Monday</td>
-    <td>05:00 am - 06:00 pm</td>
-  </tr>
-  
-      <tr>
-   <td>Tuesday</td>
-    <td>05:00 am - 06:00 pm</td>
-  </tr>
-  
-        <tr>
-   <td>Wednesday</td>
-    <td>05:00 am - 06:00 pm</td>
-  </tr>
-  
-        <tr>
-   <td>Thursday</td>
-    <td>05:00 am - 06:00 pm</td>
-  </tr>
-  
-        <tr>
-   <td>Friday</td>
-    <td>05:00 am - 06:00 pm</td>
-  </tr>
-  
-        <tr>
-   <td>Saturday</td>
-    <td>08:00 am - 06:00 pm</td>
-  </tr>
-  
-        <tr>
-   <td>Sunday</td>
-    <td>08:00 am - 06:00 pm</td>
-  </tr>
-</table>
+
+<form action="/action_page.php" target="_blank">
+
+<p><input type="text" placeholder="Email" required name="Email"></p>
+
+<p><input type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+
+<p><input type="text" placeholder="Message" required name="Message"></p>
+
+<p><button type="submit">SEND MESSAGE</button></p>
+</form>
 </div>
 
 </body>
