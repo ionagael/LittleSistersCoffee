@@ -103,26 +103,54 @@ p {text-align: center;}
 }
 
 
-table {
-  border: 1px solid white;
-  margin-left:auto;
-  margin-right:auto;
-    margin-top:40px;
-        margin-bottom:10px;
+/* Beginning of tertiary nav bar */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-
-td {
-
-     background-color:#654321; 
-     color:white;
-   cursor: pointer;
-    padding: 10px;
-      text-align: center;
-    
-
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+/* End of tertiary nav bar */
 
 
 footer{
@@ -158,25 +186,123 @@ footer{
 </div>
 </div>
 
-<table>
+<!-- Beginning Iced Coffee Contents -->
 
-    <tr>
-<td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/IcedCoffee.html'">Iced Coffee</td>
-    <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/IcedCaramelMacchiato.html'">Iced Caramel Macchiato</td>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'IcedCoffee')" id="defaultOpen">Iced Coffee</button>
+</div>
 
-  </tr>
-  
-      <tr>
-        <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/Water.html'">Water</td>
-    <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/IcedTea.html'">Iced Tea</td>
-  </tr>
-  
-        <tr>
-   <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/StrawberrySmoothie.html'">Strawberry Smoothie</td>
-   <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Cold/VanillaSmoothie.html'">Vanilla Smoothie</td>
-  </tr>
-  
-</table>
+<div id="IcedCoffee" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Iced Coffee</h3>
+<ul class="blocktext">
+<li><b>Syrups: </b>caramel, strawberry, chocolate, maple syrup, or none</li>
+<li><b>Toppings: </b>chocolate chips, oreos, whipped cream, sprinkles, or none</li>
+  <li><b>Ice Cream: </b>Vanilla, chocolate, strawberry, or none</li>
+    <li><b>Candies: </b>M&M's, Gummy Bears, or none</li>
+</ul>
+</div>
+
+<!-- End Iced Coffee Contents -->
+
+<!-- Beginning Iced Caramel Macchiato Contents-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'IcedCaramelMacchiato')" id="defaultOpen">Iced Caramel Macchiato</button>
+
+</div>
+
+<div id="IcedCaramelMacchiato" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Iced Caramel Macchiato</h3>
+<ul class="blocktext">
+<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
+<li><b>Count: </b>1, 2, 3, etc.</li>
+</ul>
+</div>
+<!-- End Iced Caramel Macchiato Contents -->
+
+<!-- Beginning Water Contents-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Water')" id="defaultOpen">Water</button>
+
+</div>
+
+<div id="Water" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Water</h3>
+<ul class="blocktext">
+<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
+<li><b>Count: </b>1, 2, 3, etc.</li>
+</ul>
+</div>
+<!-- End Water Contents -->
+
+<!-- Beginning Iced Tea Contents-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'IcedTea')" id="defaultOpen">Iced Tea</button>
+
+</div>
+
+<div id="IcedTea" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Iced Tea</h3>
+<ul class="blocktext">
+<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
+<li><b>Count: </b>1, 2, 3, etc.</li>
+</ul>
+</div>
+<!-- End Iced Tea Contents -->
+
+<!-- Beginning Strawberry Smoothie Contents-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'StrawberrySmoothie')" id="defaultOpen">Strawberry Smoothie</button>
+
+</div>
+
+<div id="StrawberrySmoothie" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Strawberry Smoothie</h3>
+<ul class="blocktext">
+<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
+<li><b>Count: </b>1, 2, 3, etc.</li>
+</ul>
+</div>
+<!-- End Strawberry Smoothie Contents -->
+
+<!-- Beginning Vanilla Smoothie Contents-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'VanillaSmoothie')" id="defaultOpen">Vanilla Smoothie</button>
+
+</div>
+
+<div id="VanillaSmoothie" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3> Vanilla Smoothie</h3>
+<ul class="blocktext">
+<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
+<li><b>Count: </b>1, 2, 3, etc.</li>
+</ul>
+</div>
+<!-- End Vanilla Smoothie Contents -->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
         
 
 
