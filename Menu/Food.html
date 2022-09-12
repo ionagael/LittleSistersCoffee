@@ -101,25 +101,58 @@ p {text-align: center;}
   position: relative;
     margin: 20px;
 }
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
 table {
   border: 1px solid white;
   margin-left:auto;
   margin-right:auto;
     margin-top:40px;
         margin-bottom:10px;
-}
 
-
-td {
-
-     background-color:#654321; 
-     color:white;
-   cursor: pointer;
-    padding: 10px;
-      text-align: center;
-    
 
 }
 
@@ -158,15 +191,55 @@ footer{
 </div>
 </div>
 
-<table>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Waffles')" id="defaultOpen">Waffles</button>
 
-    <tr>
-<td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Food/Waffles.html'">Waffles</td>
-    <td onclick="location.href='https://ionagael.github.io/LittleSistersCoffee/Menu/Food/Cookies.html'">Cookies</td>
+</div>
 
-  </tr>
-  
-</table>
+<div id="Waffles" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Waffles</h3>
+  <p>Waffles are delicious.</p>
+</div>
+
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Cookies')" id="defaultOpen">Cookies</button>
+
+</div>
+
+<div id="Cookies" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Cookies</h3>
+  <p>Cookies are delicious.</p>
+</div>
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
         
 
 
