@@ -45,17 +45,17 @@ if($_POST) {
                         </div>";
     }
       
-    if($concerned_department == "billing") {
-        $recipient = "philip_burkart@hotmail.com";
+    if($concerned_department == "questions") {
+        $recipient = "info@littlesisterscoffee.com";
     }
-    else if($concerned_department == "marketing") {
-        $recipient = "philip_burkart@hotmail.com";
+    else if($concerned_department == "comments") {
+        $recipient = "info@littlesisterscoffee.com";
     }
     else if($concerned_department == "technical support") {
-        $recipient = "philip_burkart@hotmail.com";
+        $recipient = "info@littlesisterscoffee.com";
     }
     else {
-        $recipient = "philip_burkart@hotmail.com";
+        $recipient = "info@littlesisterscoffee.com";
     }
       
     $email_body .= "</div>";
