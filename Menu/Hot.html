@@ -54,6 +54,7 @@ ul.topnav li.right {float: right;}
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #7fcc6c;
+
 }
 
 /* Style the buttons inside the tab */
@@ -161,6 +162,36 @@ p {text-align: center;}
 
 /* End of tertiary nav bar */
 
+table {
+  border-spacing: 10px;
+}
+
+table td:nth-child(1)
+{
+        width: 150px;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+    height: 100px;
+        width: 100px;
+          border-radius: 50%;
+
+}
+.bubble {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 footer{
@@ -177,6 +208,19 @@ footer{
   
 </style>
 
+
+<script>
+var x = 0;
+function myEnterFunction() {
+  document.getElementById("demo2").innerHTML = x ="1 shot";
+}
+
+function yourEnterFunction() {
+  document.getElementById("demo2").innerHTML = x ="";
+}
+
+
+</script>
   
 </head>
 <body>
@@ -310,15 +354,73 @@ footer{
 <div id="Cappuccino" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Cappuccino</h3>
-<ul class="blocktext"> 
+<table>
+
   
-    <li><b>Size:</b> small, medium, or large</li>
-  <li><b>Espresso shot: </b>standard, +1, +2, +3, +4, etc.</li>
-<li><b>Caffeination:</b> decaf or regular</li>
-<li><b>Flavoring: </b>french vanilla, caramel, or none</li>
-<li><b>Toppings: </b>caramel, whipped cream, or none</li>
-<li><b>Shot of Milk:</b> whole, skim, soy, oat, almond, or none</li>
-</ul>
+    <tr>
+   <td><b>Size</b></td>  
+    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="35" height="35" alt="Logo"></td>
+    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="50" height="50" alt="Logo"></td>
+    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="60" height="60" alt="Logo"></td>
+                        <td></td>
+                                <td></td>
+                                        <td></td>
+  </tr>
+  
+      <tr>
+   <td><b>Number of Shots</b></td>
+    <td onmouseenter="myEnterFunction()" onmouseleave="yourEnterFunction()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/oneshot.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo2"></span></div>
+</div>
+</td>
+    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/twoshots.png" width="60" height="60" alt="Logo"></td>
+    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/threeshots.png" width="60" height="60" alt="Logo"></td>
+                        <td></td>
+                                <td></td>
+                                        <td></td>
+  </tr>
+  
+        <tr>
+   <td><b>Caffeination</b></td>
+    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cafpot.png" width="60" height="60" alt="Logo"></td>
+    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/decafpot.png" width="60" height="60" alt="Logo"></td>
+                      <td></td>
+                        <td></td>
+                                <td></td>
+                                        <td></td>
+  </tr>
+  
+        <tr>
+   <td><b>Flavoring</b></td>
+    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/vanilla.png" width="60" height="60" alt="Logo"></td>
+    <td onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/caramel.png" width="60" height="60" alt="Logo"></td>
+                      <td></td>
+                        <td></td>
+                                <td></td>
+                                        <td></td>
+  </tr>
+  
+        <tr>
+   <td>Toppings</td>
+    <td>05:00 am - 06:00 pm</td>
+        <td>05:00 am - 06:00 pm</td>
+                <td>05:00 am - 06:00 pm</td>
+                        <td>05:00 am - 06:00 pm</td>
+                                <td>05:00 am - 06:00 pm</td>
+                                        <td>05:00 am - 06:00 pm</td>
+  </tr>
+  
+        <tr>
+   <td>Milk</td>
+    <td>05:00 am - 06:00 pm</td>
+        <td>05:00 am - 06:00 pm</td>
+                <td>05:00 am - 06:00 pm</td>
+                        <td>05:00 am - 06:00 pm</td>
+                                <td>05:00 am - 06:00 pm</td>
+                                        <td>05:00 am - 06:00 pm</td>
+  </tr>
+  
+</table>
 
 </div>
 <!-- End Cappuccino Contents -->
