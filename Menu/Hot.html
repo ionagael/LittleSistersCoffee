@@ -12,7 +12,7 @@ font-family:Arial;
  
 }
 
-H1 { text-align: center }
+
 
 
 .topnav {
@@ -119,62 +119,12 @@ H1 { text-align: center }
 }
 
   
-
-    h3 {text-align: center;}
-
-  
-
-  
-  .button {
-  background-color: #333; 
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-    
-
-}
-
-      .button:hover {
-  background-color: #FFFFFF; 
-  border: 2px solid #333;
-  color: #333;
-        }
-  
-  .container { 
-  height: 400px;
-  position: relative;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-  
-  
-
-
-
-  
-
-  
-
-
 /* Beginning of tertiary nav bar */
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  
 }
 
 /* Style the buttons inside the tab */
@@ -214,14 +164,54 @@ H1 { text-align: center }
   float: right;
   cursor: pointer;
   font-size: 28px;
-
 }
 
 .topright:hover {color: red;}
 
 /* End of tertiary nav bar */
 
-table {
+
+    h1 {text-align: center;}
+
+  
+
+  
+  .button {
+  background-color: #333; 
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+    
+
+}
+
+      .button:hover {
+  background-color: #FFFFFF; 
+  border: 2px solid #333;
+  color: #333;
+        }
+  
+  .container { 
+  height: 400px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  
+  /*start Cappuccino imagery coding*/
+  table {
   border-spacing: 5px;
 }
 
@@ -247,9 +237,38 @@ td {
   transform: translate(-50%, -50%);
 }
 
-</style>
+
   
+  /*  start footer*/
+  
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+
+ 
+      font-family: Georgia;
+}
+    /*  end footer*/
+
+  
+</style>
+ 
   <script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+    </script>
+<script>
   function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
@@ -430,34 +449,19 @@ function yourdecaf() {
 </script>
   
 </head>
-<body>
+<body class="bg">
+  
   
     
-    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript">
-      new JotformFeedback({
-        formId: "222549027765058",
-        buttonText: "Contact",
-        base: "https://form.jotform.com/",
-        background: "#9b9b9b",
-        fontColor: "#FFFFFF",
-        buttonSide: "left",
-        buttonAlign: "center",
-        type: 0,
-        width: 700,
-        height: 500,
-        isCardForm: false
-      });
-    </script>
 
 
-
-            <div class="topnav" id="myTopnav">
+     <div class="topnav" id="myTopnav">
   <a href="https://littlesisterscoffee.com/">Home</a>
-  <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact</a>
+         <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact</a>
   <div class="dropdown">
-    <div class="active"><button class="dropbtn">Menu</button></div>
-
-
+    <div class= "active"><button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button></div> 
     <div class="dropdown-content">
       <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Hot.html">Hot Drinks</a>
       <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Cold.html">Cold Drinks</a>
@@ -467,8 +471,7 @@ function yourdecaf() {
   <a href ="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-  <h1>Hot Drinks</h1>
-
+<h1>Hot Drinks</h1>
 <!-- Beginning Coffee Contents -->
 
 <div class="tab">
@@ -704,7 +707,6 @@ function yourdecaf() {
 
 </div>
 <!-- End Cappuccino Contents -->
-
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -723,13 +725,24 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-        
 
-        
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+  
 
 
 </body>
-
 
   
 </html>
