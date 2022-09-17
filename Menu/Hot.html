@@ -3,7 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  
+    .arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 body {
 margin:0;
 font-family:Arial;
@@ -459,7 +468,7 @@ function yourdecaf() {
   <a href="https://littlesisterscoffee.com/">Home</a>
          <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact</a>
   <div class="dropdown">
-    <div class= "active"><button class="dropbtn">Menu
+    <div class= "active"><button class="dropbtn">Menu <i class="arrow down"></i>
       <i class="fa fa-caret-down"></i>
     </button></div> 
     <div class="dropdown-content">
