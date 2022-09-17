@@ -4,6 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 body {
 margin:0;
 font-family:Arial;
@@ -153,7 +164,7 @@ table {
   <a href="https://littlesisterscoffee.com/">Home</a>
   <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html" class="active">Contact</a>
   <div class="dropdown">
-    <button class="dropbtn">Menu 
+    <button class="dropbtn">Menu <i class="arrow down"></i>
 
     </button>
     <div class="dropdown-content">
@@ -176,3 +187,4 @@ table {
 
 
 </html>
+
