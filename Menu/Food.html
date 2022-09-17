@@ -334,24 +334,28 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<!-- dropdown Coatings JAVA start -->
-<script>
-function favTutorial() {
-var mylist = document.getElementById("myList");
-document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
-}
-</script>
-<!-- dropdown Coatings JAVA end -->
 
 
 <!-- dropdown Toppings JAVA start -->
 <script>
 function toppingsTutorial() {
 var mylist = document.getElementById("toppingsList");
-document.getElementById("toppings").value = mylist.options[mylist.selectedIndex].text;
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
 }
 </script>
 <!-- dropdown Toppings JAVA end -->
+
+<!-- dropdown Coatings JAVA start -->
+<script>
+function favTutorial() {
+var mylist = document.getElementById("myList");
+document.getElementById("toppings").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+<!-- dropdown Coatings JAVA end -->
+
+
+
 
 <script>
 function myFunction() {
