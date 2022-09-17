@@ -276,31 +276,43 @@ font-family:Arial;
 
 <div id="Waffles" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Waffles</h3>
-<ul class="blocktext">
-<li><b>Syrups: </b>caramel, strawberry, chocolate, maple syrup, or none</li>
-<li><b>Toppings: </b>chocolate chips, oreos, whipped cream, sprinkles, or none</li>
-  <li><b>Ice Cream: </b>Vanilla, chocolate, strawberry, or none</li>
-    <li><b>Candies: </b>M&M's, Gummy Bears, or none</li>
-</ul>
+  <h3>Waffle Pop Decisions</h3>
+
+
+<!--hard coatings HTML start-->
+<form>
+<b>Coatings</b>
+<select id = "myList" onchange = "favTutorial()" >
+<option> ---Choose Coating--- </option>
+<option>Chocolate Coating</option>
+<option>Cherry Coating</option>
+<option>Butterscotch Coating</option>
+<option>Blue Raspberry Coating</option>
+<option>No Coating</option>
+</select>
+</form>
+<!--hard coatings HTML end-->
+
+<!--hard coatings HTML start-->
+<form>
+<b>Toppings</b>
+<select id = "toppingsList" onchange = "toppingsTutorial()" >
+<option> ---Choose Topping--- </option>
+<option>Chocolate Chips</option>
+<option>Oreos</option>
+<option>Whipped Cream</option>
+<option>Sprinkles</option>
+<option>None</option>
+</select>
+<p> At the window, ask for a waffle pop with: 
+<input type = "text" id = "toppings" size = "20" </p> 
+
+<input type = "text" id = "favourite" size = "20" </p>
+</form>
+<!--hard coatings HTML end-->
+
 </div>
 
-
-
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Cookies')" id="defaultOpen">Cookies</button>
-
-</div>
-
-<div id="Cookies" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Cookies</h3>
-<ul class="blocktext">
-<li><b>Types: </b>chocolate, oatmeal raisin, or sugar</li>
-<li><b>Count: </b>1, 2, 3, etc.</li>
-</ul>
-</div>
 
 
 <script>
@@ -322,6 +334,24 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 
+<!-- dropdown Coatings JAVA start -->
+<script>
+function favTutorial() {
+var mylist = document.getElementById("myList");
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+<!-- dropdown Coatings JAVA end -->
+
+
+<!-- dropdown Toppings JAVA start -->
+<script>
+function toppingsTutorial() {
+var mylist = document.getElementById("toppingsList");
+document.getElementById("toppings").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+<!-- dropdown Toppings JAVA end -->
 
 <script>
 function myFunction() {
