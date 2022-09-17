@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   
- 
 body {
 margin:0;
 font-family:Arial;
@@ -13,7 +12,7 @@ font-family:Arial;
  
 }
 
-H1 { text-align: center }
+
 
 
 .topnav {
@@ -119,17 +118,8 @@ H1 { text-align: center }
   }
 }
 
-
-
-  h2 {text-align: center;}
-    h3 {text-align: center;}
-
   
-  .container { 
-  height: 100%;
-  position: relative;
-    margin: 20px;
-}
+/* Beginning of tertiary nav bar */
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -147,8 +137,8 @@ H1 { text-align: center }
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-    font-family: georgia;
-   color: black;
+  font-family: georgia;
+  color: black;
 }
 
 /* Change background color of buttons on hover */
@@ -177,31 +167,76 @@ H1 { text-align: center }
 }
 
 .topright:hover {color: red;}
-table {
-  border: 1px solid white;
-  margin-left:auto;
-  margin-right:auto;
-    margin-top:40px;
-        margin-bottom:10px;
 
+/* End of tertiary nav bar */
+
+
+    h1 {text-align: center;}
+
+  
+
+  
+  .button {
+  background-color: #333; 
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+    
 
 }
 
+      .button:hover {
+  background-color: #FFFFFF; 
+  border: 2px solid #333;
+  color: #333;
+        }
+  
+  .container { 
+  height: 400px;
+  position: relative;
+}
 
-
-footer{
-    margin-top: auto;
+.center {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
   
-  .site-footer {
-  background: #333;
-}
+  
 
-#footer-content {
-  background: #333;
+  
+  /*  start footer*/
+  
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+
+ 
+      font-family: Georgia;
+}
+    /*  end footer*/
+
   
 </style>
+ 
   <script>
   function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
@@ -210,30 +245,28 @@ footer{
 
   
 </head>
-<body>
+<body class="bg">
+  
   
     
 
 
-         <div class="topnav" id="myTopnav">
+     <div class="topnav" id="myTopnav">
   <a href="https://littlesisterscoffee.com/">Home</a>
-  <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact</a>
-
-<div class ="dropdown">
-    <div class="active"><button class="dropbtn">Menu</button></div>
-
-<div class="dropdown-content">
+         <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html">Contact</a>
+  <div class="dropdown">
+    <div class= "active"><button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button></div> 
+    <div class="dropdown-content">
       <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Hot.html">Hot Drinks</a>
       <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Cold.html">Cold Drinks</a>
-      <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Food.html" >Food</a>
-</div>
-
-</div> 
-  
-  <a href ="https://ionagael.github.io/LittleSistersCoffee/About.html" class="dropbtn">About</a>
+      <a href="https://ionagael.github.io/LittleSistersCoffee/Menu/Food.html">Food</a>
+    </div>
+  </div> 
+  <a href ="https://ionagael.github.io/LittleSistersCoffee/About.html">About</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
 <h1>Food</h1>
 
 <div class="tab">
@@ -270,11 +303,6 @@ footer{
 </div>
 
 
-
-
-
-
-
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -293,11 +321,24 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-        
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+  
 
 
 </body>
-
 
   
 </html>
