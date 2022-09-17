@@ -183,7 +183,7 @@ td {
   position: relative;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .centered {
@@ -211,12 +211,172 @@ footer{
 
 <script>
 var x = 0;
-function myEnterFunction() {
+function oneshot() {
   document.getElementById("demo2").innerHTML = x ="1 shot";
 }
 
 function yourEnterFunction() {
   document.getElementById("demo2").innerHTML = x ="";
+}
+
+
+var x = 0;
+function twoshots() {
+  document.getElementById("demo3").innerHTML = x ="2 shots";
+}
+
+function yourtwoshots() {
+  document.getElementById("demo3").innerHTML = x ="";
+}
+
+var x = 0;
+function threeshots() {
+  document.getElementById("demo4").innerHTML = x ="3 shots";
+}
+
+function yourthreeshots() {
+  document.getElementById("demo4").innerHTML = x ="";
+}
+
+var x = 0;
+function whipped() {
+  document.getElementById("demo5").innerHTML = x ="Whipped Cream";
+}
+
+function yourwhipped() {
+  document.getElementById("demo5").innerHTML = x ="";
+}
+
+var x = 0;
+function cinnamon() {
+  document.getElementById("demo6").innerHTML = x ="Cinnamon";
+}
+
+function yourcinnamon() {
+  document.getElementById("demo6").innerHTML = x ="";
+}
+
+var x = 0;
+function carameldrizzle() {
+  document.getElementById("demo7").innerHTML = x ="Caramel Drizzle";
+}
+
+function yourcarameldrizzle() {
+  document.getElementById("demo7").innerHTML = x ="";
+}
+
+var x = 0;
+function smallcup() {
+  document.getElementById("demo8").innerHTML = x ="Small Cup";
+}
+
+function yoursmallcup() {
+  document.getElementById("demo8").innerHTML = x ="";
+}
+
+var x = 0;
+function mediumcup() {
+  document.getElementById("demo9").innerHTML = x ="Medium Cup";
+}
+
+function yourmediumcup() {
+  document.getElementById("demo9").innerHTML = x ="";
+}
+
+var x = 0;
+function largecup() {
+  document.getElementById("demo10").innerHTML = x ="Large Cup";
+}
+
+function yourlargecup() {
+  document.getElementById("demo10").innerHTML = x ="";
+}
+
+var x = 0;
+function vanilla() {
+  document.getElementById("demo11").innerHTML = x ="Vanilla";
+}
+
+function yourvanilla() {
+  document.getElementById("demo11").innerHTML = x ="";
+}
+
+var x = 0;
+function caramel() {
+  document.getElementById("demo12").innerHTML = x ="Caramel";
+}
+
+function yourcaramel() {
+  document.getElementById("demo12").innerHTML = x ="";
+}
+
+var x = 0;
+function soy() {
+  document.getElementById("demo13").innerHTML = x ="Soy";
+}
+
+function yoursoy() {
+  document.getElementById("demo13").innerHTML = x ="";
+}
+
+
+var x = 0;
+function almond() {
+  document.getElementById("demo14").innerHTML = x ="Almond";
+}
+
+function youralmond() {
+  document.getElementById("demo14").innerHTML = x ="";
+}
+
+
+var x = 0;
+function oat() {
+  document.getElementById("demo15").innerHTML = x ="Oat";
+}
+
+function youroat() {
+  document.getElementById("demo15").innerHTML = x ="";
+}
+
+
+var x = 0;
+function whole() {
+  document.getElementById("demo16").innerHTML = x ="Whole";
+}
+
+function yourwhole() {
+  document.getElementById("demo16").innerHTML = x ="";
+}
+
+
+var x = 0;
+function skim() {
+  document.getElementById("demo17").innerHTML = x ="Skim";
+}
+
+function yourskim() {
+  document.getElementById("demo17").innerHTML = x ="";
+}
+
+
+var x = 0;
+function regular() {
+  document.getElementById("demo18").innerHTML = x ="Regular";
+}
+
+function yourregular() {
+  document.getElementById("demo18").innerHTML = x ="";
+}
+
+
+var x = 0;
+function decaf() {
+  document.getElementById("demo19").innerHTML = x ="Decaf";
+}
+
+function yourdecaf() {
+  document.getElementById("demo19").innerHTML = x ="";
 }
 
 
@@ -359,22 +519,38 @@ function yourEnterFunction() {
   
     <tr>
    <td><b>Size</b></td>  
-    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="35" height="35" alt="Logo"></td>
-    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="50" height="50" alt="Logo"></td>
-    <td style="background-color:#C4A484"> <img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="60" height="60" alt="Logo"></td>
+    <td onmouseenter="smallcup()" onmouseleave="yoursmallcup()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="40" height="40" alt="Logo"><div class="centered">
+<span id="demo8"></span></div>
+</div>
+</td>
+    <td onmouseenter="mediumcup()" onmouseleave="yourmediumcup()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="50" height="50" alt="Logo"><div class="centered">
+<span id="demo9"></span></div>
+</div>
+</td>
+      <td onmouseenter="largecup()" onmouseleave="yourlargecup()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cup.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo10"></span></div>
+</div>
+</td>
                         <td></td>
                                 <td></td>
                                         <td></td>
   </tr>
   
+  
       <tr>
    <td><b>Number of Shots</b></td>
-    <td onmouseenter="myEnterFunction()" onmouseleave="yourEnterFunction()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/oneshot.png" width="60" height="60" alt="Logo"><div class="centered">
+    <td onmouseenter="oneshot()" onmouseleave="yourEnterFunction()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/oneshot.png" width="60" height="60" alt="Logo"><div class="centered">
 <span id="demo2"></span></div>
 </div>
 </td>
-    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/twoshots.png" width="60" height="60" alt="Logo"></td>
-    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/threeshots.png" width="60" height="60" alt="Logo"></td>
+    <td onmouseenter="twoshots()" onmouseleave="yourtwoshots()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/twoshots.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo3"></span></div>
+</div>
+</td>
+      <td onmouseenter="threeshots()" onmouseleave="yourthreeshots()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/threeshots.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo4"></span></div>
+</div>
+</td>
                         <td></td>
                                 <td></td>
                                         <td></td>
@@ -382,8 +558,14 @@ function yourEnterFunction() {
   
         <tr>
    <td><b>Caffeination</b></td>
-    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cafpot.png" width="60" height="60" alt="Logo"></td>
-    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/decafpot.png" width="60" height="60" alt="Logo"></td>
+    <td onmouseenter="regular()" onmouseleave="yourregular()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cafpot.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo18"></span></div>
+</div>
+</td>
+    <td onmouseenter="decaf()" onmouseleave="yourdecaf()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/decafpot.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo19"></span></div>
+</div>
+</td>
                       <td></td>
                         <td></td>
                                 <td></td>
@@ -392,8 +574,14 @@ function yourEnterFunction() {
   
         <tr>
    <td><b>Flavoring</b></td>
-    <td style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/vanilla.png" width="60" height="60" alt="Logo"></td>
-    <td onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"style="background-color:#C4A484"><img src="https://ionagael.github.io/LittleSistersCoffee/images/caramel.png" width="60" height="60" alt="Logo"></td>
+    <td onmouseenter="vanilla()" onmouseleave="yourvanilla()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/vanilla.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo11"></span></div>
+</div>
+</td>
+    <td onmouseenter="caramel()" onmouseleave="yourcaramel()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/caramel.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo12"></span></div>
+</div>
+</td>
                       <td></td>
                         <td></td>
                                 <td></td>
@@ -401,23 +589,46 @@ function yourEnterFunction() {
   </tr>
   
         <tr>
-   <td>Toppings</td>
-    <td>05:00 am - 06:00 pm</td>
-        <td>05:00 am - 06:00 pm</td>
-                <td>05:00 am - 06:00 pm</td>
-                        <td>05:00 am - 06:00 pm</td>
-                                <td>05:00 am - 06:00 pm</td>
-                                        <td>05:00 am - 06:00 pm</td>
+   <td><b>Toppings</b></td>
+    <td onmouseenter="whipped()" onmouseleave="yourwhipped()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/whipped.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo5"></span></div>
+</div>
+</td>
+    <td onmouseenter="cinnamon()" onmouseleave="yourcinnamon()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/cinnamon.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo6"></span></div>
+</div>
+</td>
+      <td onmouseenter="carameldrizzle()" onmouseleave="yourcarameldrizzle()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/carameldrizzle.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo7"></span></div>
+</div>
+</td>
+                        <td></td>
+                                <td></td>
+                                        <td></td>
   </tr>
   
         <tr>
    <td>Milk</td>
-    <td>05:00 am - 06:00 pm</td>
-        <td>05:00 am - 06:00 pm</td>
-                <td>05:00 am - 06:00 pm</td>
-                        <td>05:00 am - 06:00 pm</td>
-                                <td>05:00 am - 06:00 pm</td>
-                                        <td>05:00 am - 06:00 pm</td>
+    <td onmouseenter="soy()" onmouseleave="yoursoy()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/soy.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo13"></span></div>
+</div>
+</td>
+    <td onmouseenter="almond()" onmouseleave="youralmond()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/almond.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo14"></span></div>
+</div>
+</td>
+      <td onmouseenter="oat()" onmouseleave="youroat()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/oat.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo15"></span></div>
+</div>
+</td>
+      <td onmouseenter="whole()" onmouseleave="yourwhole()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/whole.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo16"></span></div>
+</div>
+</td>
+      <td onmouseenter="skim()" onmouseleave="yourskim()" style="background-color:#C4A484">  <div class="bubble"><img src="https://ionagael.github.io/LittleSistersCoffee/images/skim.png" width="60" height="60" alt="Logo"><div class="centered">
+<span id="demo17"></span></div>
+</div>
+</td>
   </tr>
   
 </table>
