@@ -3,15 +3,9 @@
 <head>
  <link href=mystyle.css rel=stylesheet>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body {
-margin:0;
-font-family:Arial;
 
-
- 
-}
 
 
 
@@ -148,9 +142,37 @@ table {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding:6px 0;
+  
+}
+
+
+
+
 </style>
 </head>
 <body>
+ <div id="page-container">
+   <div id="content-wrap">
 
     
 
@@ -234,16 +256,13 @@ function myFunction() {
 </table>
  <div class ="container5">
 
-  <P>109 E. Broadway Ave., Medford WI 54451</p>
+  <p>109 E. Broadway Ave., Medford WI 54451</p>
 
   
 </div>
 </body>
-
-
-
-<div class="footer">
-  <p>Little Sister LLC, dba Little Sister's Coffee (2023)</p>
+</div>
+   <footer id="footer">Little Sister LLC, dba Little Sister's Coffee (2023)</footer>
 </div>
 
 
