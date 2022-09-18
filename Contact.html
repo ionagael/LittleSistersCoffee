@@ -4,7 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.arrow {
+
+/* arrow on dropdown menu start */
+
+  .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -14,10 +17,9 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/* arrow on dropdown menu start */
 
-
-
-
+/*primary nav start */
 
 .topnav {
   overflow: hidden;
@@ -122,40 +124,70 @@
   }
 }
 
-div.container5 {
-        width: 70%;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
+  /*primary nav start */
 
+    h3 {text-align: center;}
+   
+   img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-      }
-
-table {
-    background: #C4A484;
-    border-spacing: 5px;
-    border: 1px solid white; 
-    margin-left:auto; 
-    margin-right:auto;
-    margin-bottom: 10px;
 }
 
 
-</style>
- </style>
+  .button {
+  background-color: #333; 
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+    
+
+}
+
+      .button:hover {
+  background-color: #FFFFFF; 
+  border: 2px solid #333;
+  color: #333;
+        }
+  
+  .container { 
+  height: 400px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
   </style>
+  
   <script>
   function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
     </script>
+  
 </head>
 <body>
+  
+  <div id="page-container">
+   <div id="content-wrap">
+    
 
-<div class="topnav" id="myTopnav">
+
+     <div class="topnav" id="myTopnav">
   <a href="https://littlesisterscoffee.com/">Home</a>
-  <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html" class="active">Contact</a>
+         <a href="https://ionagael.github.io/LittleSistersCoffee/Contact.html" class="active">Contact</a>
   <div class="dropdown">
     <button class="dropbtn">Menu <i class="arrow down"></i>
 
@@ -170,10 +202,31 @@ table {
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
 <iframe height="442" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" sandbox="allow-top-navigation allow-scripts allow-popups allow-forms allow-same-origin" src="https://ionagael.wufoo.com/embed/zlj093g15npfaq/"> <a href="https://ionagael.wufoo.com/forms/zlj093g15npfaq/">Fill out my Wufoo form!</a> </iframe>
+
+
+
+
 </body>
-
-
+</div>
+   <footer id="footer">Little Sister LLC, dba Little Sister's Coffee (2023)</footer>
+</div>
 
 
 
